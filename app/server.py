@@ -14,7 +14,7 @@ from .llm import LlmClient  # or use .llm_with_func_calling
 
 load_dotenv(override=True)
 app = FastAPI()
-retell = Retell(api_key=os.environ["key_7c736441bb87ab44d221879e6b24"])
+retell = Retell(api_key=os.environ["RETELL_API_KEY"])
 
 
 # Handle webhook from Retell server. This is used to receive events from Retell server.
